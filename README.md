@@ -1,1 +1,5 @@
-# dotfiles
+- Connect to AppleID
+- Install software updates - About This Mac  -> Software Updates
+- Install XCode with AppStore
+- Agree to XCode terms
+- Run install script
