@@ -3,3 +3,5 @@
 - Install XCode with AppStore
 - Agree to XCode terms
 - Run install script
+- Install unity versions with unity hub
+- Install jetbrains with jetbrains toolbox
