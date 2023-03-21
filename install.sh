@@ -21,8 +21,10 @@ brew install mas
 brew install mongodb
 brew install node
 brew install python
+brew install restic
 brew install rclone
 brew install scrcpy
+brew install stats
 brew install suspicious-package
 brew install youtube-dl
 brew install watchman
@@ -39,14 +41,18 @@ brew install --cask --appdir="/Applications" adobe-photoshop-cc
 brew install --cask --appdir="/Applications" alfred
 brew install --cask --appdir="/Applications" alt-tab
 brew install --cask --appdir="/Applications" anki
+brew install --cask --appdir="/Applications" betterzip
+brew install --cask --appdir="/Applications" chatgpt --no-quarantine
 brew install --cask --appdir="/Applications" duti
+brew install --cask --appdir="/Applications" dozer
 brew install --cask --appdir="/Applications" dropbox
 brew install --cask --appdir="/Applications" github-desktop
 brew install --cask --appdir="/Applications" google-chrome
+brew install --cask --appdir="/Applications" google-cloud-sdk
 brew install --cask --appdir="/Applications" google-drive
-brew install --cask --appdir="/Applications" intellij-idea
 brew install --cask --appdir="/Applications" java
 brew install --cask --appdir="/Applications" jetbrains-toolbox
+brew install --cask --appdir="/Applications" keycastr
 brew install --cask --appdir="/Applications" libreoffice
 brew install --cask --appdir="/Applications" ngrock
 brew install --cask --appdir="/Applications" obsidian
@@ -57,6 +63,7 @@ brew install --cask --appdir="/Applications" telegram
 brew install --cask --appdir="/Applications" unity-hub
 brew install --cask --appdir="/Applications" vlc
 brew install --cask --appdir="/Applications" zoom
+brew install --cask --appdir="/Applications" qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webpquicklook suspicious-package && qlmanage -r
 
 
 
@@ -79,6 +86,12 @@ duti -s org.libreoffice.script csv all
 
 
 defaults write com.apple.finder AppleShowAllFiles TRUE;killall Finder
+
+
+git config --global user.name "Eli Atlas"
+git config --global user.email "eli@eliatlas.com"
+
+pip3 install markdown-anki-decks
 
 # cleanup
 brew cleanup --prune=all
