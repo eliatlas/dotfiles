@@ -25,6 +25,7 @@ defaults write com.apple.finder QLEnableTextSelection -bool true
 defaults write com.apple.finder ShowPathbar -bool true
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
 defaults write com.apple.finder AppleShowAllFiles TRUE;
+defaults write com.google.Chrome URLAllowlist -array 'obsidian://*'
 
 killall Finder
 killall Dock

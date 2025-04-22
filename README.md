@@ -1,7 +1,4 @@
-- Connect to AppleID
-- Install software updates - About This Mac  -> Software Updates
-- Install XCode with AppStore
-- Agree to XCode terms
-- Run install script
-- Install unity versions with unity hub
-- Install jetbrains with jetbrains toolbox
+Open profile configuration files:
+```shell
+sh open_sh_files.sh
+```

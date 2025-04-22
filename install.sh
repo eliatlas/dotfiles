@@ -14,9 +14,11 @@ brew tap homebrew/science
 brew tap mongodb/brew
 
 brew install awscli
+brew install cocoapods
 brew install flow
 brew install google-cloud-sdk
 brew install gradle
+brew install imagemagick
 brew install mas
 brew install mongodb-community@7.0
 brew install mongosh
@@ -25,8 +27,10 @@ brew install node
 brew install python
 brew install restic
 brew install rclone
+brew install redis
 brew install scrcpy
 brew install stats
+brew install tree
 brew install suspicious-package
 brew install youtube-dl
 brew install watchman
@@ -72,13 +76,16 @@ brew install --cask --appdir="/Applications" unity-hub
 brew install --cask --appdir="/Applications" vlc
 brew install --cask --appdir="/Applications" whatsapp
 brew install --cask --appdir="/Applications" zoom
-brew install --cask --appdir="/Applications" qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webpquicklook suspicious-package && qlmanage -r
+brew install --cask --no-quarantine --appdir="/Applications" syntax-highlight
+brew install --cask --appdir="/Applications" qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webpquicklook suspicious-package && qlmanage -r
 
 # Mac app store
+# Use `mas list` for listing installed. Or `mas search APP_NAME` to get it's id
 mas 'Be Focused Pro', id: 961632517
 mas 'Dato', id: 1470584107
 mas 'Divvy', id: 413857545
 mas 'GarageBand', id: 682658836
+mas 'GrandPerspective', id: 1111570163
 mas 'Numbers', id: 409203825
 mas 'Presentify', id: 1507246666
 mas 'Slack', id: 803453959
@@ -93,6 +100,8 @@ git config --global user.email "eli@eliatlas.com"
 
 pip3 install markdown-anki-decks
 
+npm install -g typescript
+npm i -g @swc/cli @swc/core
 npm install -g pm2
 npm install -g openupm-cli
 npm install -g @bchatard/alfred-jetbrains
