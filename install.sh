@@ -12,7 +12,11 @@ fi
 
 brew tap homebrew/science
 brew tap mongodb/brew
+brew tap atlassian/homebrew-acli
 
+
+brew install acli
+brew install atlassian-cli
 brew install awscli
 brew install cocoapods
 brew install flow
@@ -30,6 +34,7 @@ brew install rclone
 brew install redis
 brew install scrcpy
 brew install stats
+brew install tmux
 brew install tree
 brew install suspicious-package
 brew install youtube-dl
