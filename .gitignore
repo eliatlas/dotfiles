@@ -17,3 +17,8 @@ nbproject
 .project
 .settings
 composer.lock
+
+# AI assistants #
+#################
+.claude
+CLAUDE.md
