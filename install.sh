@@ -22,7 +22,9 @@ brew install acli
 brew install atlassian-cli
 brew install awscli
 brew install cocoapods
+brew install coreutils
 brew install direnv
+brew install fd
 brew install ffmpeg
 brew install flow
 brew install gh
@@ -35,6 +37,8 @@ brew install mongodb-community@7.0
 brew install mongosh
 brew install ngrok/ngrok/ngrok
 brew install node
+brew install pyenv
+brew install pyenv-virtualenv
 brew install python
 brew install restic
 brew install rclone
@@ -59,12 +63,14 @@ brew install --cask --appdir="/Applications" anki
 brew install --cask --appdir="/Applications" betterzip
 brew install --cask --appdir="/Applications" calibre
 brew install --cask --appdir="/Applications" chatgpt --no-quarantine
+brew install --cask --appdir="/Applications" docker
 brew install --cask --appdir="/Applications" duti
 brew install --cask --appdir="/Applications" dozer
 brew install --cask --appdir="/Applications" dropbox
 brew install --cask --appdir="/Applications" microsoft-edge
 brew install --cask --appdir="/Applications" github-desktop
 brew install --cask --appdir="/Applications" google-chrome
+brew install --cask --appdir="/Applications" iina
 brew install --cask --appdir="/Applications" iterm2
 brew install --cask --appdir="/Applications" google-cloud-sdk
 brew install --cask --appdir="/Applications" google-drive
@@ -124,6 +130,8 @@ npm install -g yarn
 npm install -g @anthropic-ai/claude-code
 npm install -g @openai/codex
 npm install -g eas-cli
+npm install -g vercel
+npm install -g firebase-tools
 
 # cleanup
 brew cleanup --prune=all
