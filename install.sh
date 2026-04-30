@@ -23,6 +23,7 @@ brew install atlassian-cli
 brew install awscli
 brew install cocoapods
 brew install coreutils
+brew install dbmate
 brew install direnv
 brew install fd
 brew install ffmpeg
@@ -37,6 +38,7 @@ brew install mongodb-community@7.0
 brew install mongosh
 brew install ngrok/ngrok/ngrok
 brew install node
+brew install postgresql@16
 brew install pyenv
 brew install pyenv-virtualenv
 brew install python
@@ -86,6 +88,7 @@ brew install --cask --appdir="/Applications" postman
 brew install --cask --appdir="/Applications" skype
 brew install --cask --appdir="/Applications" slack
 brew install --cask --appdir="/Applications" stats
+brew install --cask --appdir="/Applications" tailscale
 brew install --cask --appdir="/Applications" telegram
 brew install --cask --appdir="/Applications" unity-hub
 brew install --cask --appdir="/Applications" visual-studio-code
@@ -132,6 +135,14 @@ npm install -g @openai/codex
 npm install -g eas-cli
 npm install -g vercel
 npm install -g firebase-tools
+
+# postgresql@16 is keg-only — bake its bin into .zprofile so psql/pg_dump are on PATH
+PG_PREFIX=$(brew --prefix postgresql@16 2>/dev/null)
+if [ -n "$PG_PREFIX" ] && [ -d "$PG_PREFIX/bin" ] && ! grep -q "postgresql@16/bin" "$HOME/.zprofile" 2>/dev/null; then
+  echo "" >> "$HOME/.zprofile"
+  echo "# postgresql@16 (keg-only formula)" >> "$HOME/.zprofile"
+  echo "export PATH=\"$PG_PREFIX/bin:\$PATH\"" >> "$HOME/.zprofile"
+fi
 
 # cleanup
 brew cleanup --prune=all
